@@ -1,0 +1,7 @@
+[
+  { "country": "USA", "emissions": 4800 },
+  { "country": "China", "emissions": 9800 },
+  { "country": "India", "emissions": 3800 },
+  { "country": "Russia", "emissions": 2900 },
+  { "country": "Brazil", "emissions": 1600 }
+]

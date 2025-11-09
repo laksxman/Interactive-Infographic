@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Infographic - CO₂ Emissions</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌍 Global Warming: CO₂ Emissions by Country</h1>
+    <p>Hover on bars to see data, use buttons or slider to change year.</p>
+  </header>
+
+  <main>
+    <section id="controls">
+      <button class="year-btn" data-year="2010">2010</button>
+      <button class="year-btn" data-year="2020">2020</button>
+
+      <div id="year-slider">
+        <input type="range" id="yearRange" min="2010" max="2020" step="10" value="2020" />
+        <span id="yearLabel">2020</span>
+      </div>
+    </section>
+
+    <section id="chart-container">
+      <canvas id="emissionChart"></canvas>
+    </section>
+
+    <div id="tooltip" class="tooltip"></div>
+  </main>
+
+  <footer>
+    <p>Data Source: <a href="https://ourworldindata.org/" target="_blank">Our World in Data</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/tooltip.js"></script>
+  <script src="js/controls.js"></script>
+  <script src="js/chart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
